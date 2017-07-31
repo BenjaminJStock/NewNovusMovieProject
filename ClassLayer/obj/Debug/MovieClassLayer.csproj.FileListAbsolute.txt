@@ -11,3 +11,8 @@ C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\Novu
 C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.csprojResolveAssemblyReference.cache
 C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.dll
 C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.pdb
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\ClassLayer\bin\Debug\MovieClassLayer.dll
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\ClassLayer\bin\Debug\MovieClassLayer.pdb
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.dll
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.pdb

@@ -13,7 +13,7 @@ namespace ApplicationVariables
 
             public struct CsvPaths
             {
-                public static string MoviesCSV = @"C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\WebMovies\ExtendedTestData.csv";
+                public static string MoviesCSV = @"C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\ExtendedTestData.csv";
                 //public static string MoviesCSV = @"C:\Users\Recor\Documents\Visual Studio 2015\Projects\NovusMovieProject\WebMovies\ExtendedTestData.csv";
             }
 
@@ -58,6 +58,12 @@ namespace ApplicationVariables
                         public static string ControlID = @"DropDownListActors";
                         public static string DataTextField = @"PersonName";
                         public static string DataValueField = @"PersonID";
+                    }
+                    public struct Years
+                    {
+                        public static string ControlID = @"DropDownListYears";
+                        public static string DataTextField = @"FilmYear";
+                        public static string DataValueField = @"FilmID";
                     }
                 }
             }

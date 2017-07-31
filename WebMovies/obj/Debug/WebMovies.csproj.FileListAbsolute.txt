@@ -46,3 +46,19 @@ C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\Novu
 C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\WebMovies\obj\Debug\WebMovies.csprojResolveAssemblyReference.cache
 C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\WebMovies\obj\Debug\WebMovies.dll
 C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\WebMovies\obj\Debug\WebMovies.pdb
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\WebMovies.dll.config
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\WebMovies.dll
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\WebMovies.pdb
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\ApplicationVariables.dll
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\MovieBusinessLayer.dll
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\MovieClassLayer.dll
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\DataLayer.dll
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\LumenWorks.Framework.IO.dll
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\ApplicationVariables.pdb
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\MovieBusinessLayer.pdb
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\MovieClassLayer.pdb
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\DataLayer.pdb
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\bin\LumenWorks.Framework.IO.xml
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\obj\Debug\WebMovies.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\obj\Debug\WebMovies.dll
+C:\Users\Benjamin Stock\Source\Repos\NewNovusMovieProject\WebMovies\obj\Debug\WebMovies.pdb

@@ -20,7 +20,7 @@ namespace MovieClassLayer
             //--------------------------------------------------------------------- METHODS
 
             //----------------------------------------------------------- FILMS
-            public Films GetFilmsFilteredSubset(string filmID, string directorID, string actorID)
+            public Films GetFilmsFilteredSubset(string filmID, string directorID, string actorID, string yearID)
             {
                 var tmpFilms = this.Where(f => f.FilmID == ((filmID == null) ? f.FilmID : filmID))
                                     .Where(f => f.Directors.Any(p => p.PersonID == ((directorID == null) ? p.PersonID : directorID)))
@@ -33,13 +33,13 @@ namespace MovieClassLayer
 
             public List<SimplisticFilm> ToListSimplisticFilm()
             {
-                //return this.Select(f => f.GetSimplisticFilm()).OrderBy(f => f.FilmName)
-                //                                                .ThenBy(f => f.FilmID)
-                //                                                .ToList();
+                return this.Select(f => f.GetSimplisticFilm()).OrderBy(f => f.FilmName)
+                                                                .ThenBy(f => f.FilmID)
+                                                                .ToList();
 
-                return this.ToList<SimplisticFilm>().OrderBy(s => s.FilmName)
-                                                    .ThenBy(s => s.FilmID)
-                                                    .ToList();
+                //return this.ToList<SimplisticFilm>().OrderBy(s => s.FilmName)
+                                                    //.ThenBy(s => s.FilmID)
+                                                    //.ToList();
             }
 
             public List<SimplisticFilm> GetDistinctSimplisticFilm(string filmID)
@@ -47,6 +47,23 @@ namespace MovieClassLayer
                 return this.Select(f => f.GetSimplisticFilm()).Where(f => f.FilmID == filmID)
                                                                 .ToList();
             }
+
+            public List<Year> ToListDistinctYear(string filmID)
+            {
+                return this.Select(f => f.GetSimplisticFilm()).Where(f => f.FilmID == filmID);
+            }
+
+
+            //------------------------------------------------------------YEAR
+
+            //public List<Year> ToListDistinctYear()
+            //{
+            //    return this.ToList<Year>().OrderBy(s => s.FilmID)
+            //                                        .ThenBy(s => s.YearID)
+            //                                        .ToList();
+            //}
+
+
 
             //----------------------------------------------------------- DIRECTORS
             public List<Director> ToListDistinctDirector()
@@ -57,6 +74,9 @@ namespace MovieClassLayer
                                                                                                             .ThenBy(p => p.PersonID)
                                                                                                             .ToList();
             }
+
+            
+
 
             public List<Director> GetDistinctDirector(string directorID)
             {
@@ -83,7 +103,15 @@ namespace MovieClassLayer
                                                                                                         .Select(grp => grp.First())
                                                                                                         .ToList();
             }
+            //---------------Years
+
+            public List<Film> GetDistinctYear(string filmID)
+            {
+                return this.ToList();
+            }
+
         }
+
 
         // ------------------------------------------------------------------------------------------------------------------- FILM
         public class Film : SimplisticFilm
@@ -125,7 +153,7 @@ namespace MovieClassLayer
         }
 
         // ------------------------------------------------------------------------------------------------------------------- SIMPLISTIC FILM
-        public class SimplisticFilm
+        public class    SimplisticFilm
         {
             public string FilmID { get; set; }
             public string FilmName { get; set; }
@@ -185,5 +213,29 @@ namespace MovieClassLayer
                 return (Person)this;
             }
         }
+        
+        public class Year
+        {
+            public string YearID { get; set; }
+            public string FilmID { get; set; }
+            //-----Constr
+            public Year() { }
+            public Year (string yearID, string filmID)
+            {
+                this.YearID = yearID;
+                this.FilmID = filmID;
+            }
+            //-----Methods
+            public Year GetYear()
+            {
+                return (Year)this;
+            }
+
+            //public List<Year> GetDistinctYear(string yearID)
+            //{
+            //    return this.ToList();
+            //}
+        }
+
     }
 }

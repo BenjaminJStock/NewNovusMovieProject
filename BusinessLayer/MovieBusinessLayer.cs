@@ -30,15 +30,15 @@ namespace MovieBusinessLayer
             }
             //-- TODO: raise error if needed
         }
-
+        
         public List<mcl.SimplisticFilm> GetDistinctSimplisticFilmsFromFilms(mcl.Films films)
         {
             return (films == null) ? null : films.ToListSimplisticFilm();
         }
 
-        public mcl.Films GetFilmsSubset(string filmID, string directorID, string actorID, mcl.Films films)
+        public mcl.Films GetFilmsSubset(string filmID, string directorID, string actorID,string yearID, mcl.Films films)
         {
-            return films.GetFilmsFilteredSubset(filmID, directorID, actorID);
+            return films.GetFilmsFilteredSubset( filmID,  directorID,  actorID,  yearID);
         }
 
         //--------------------------------------------------------------------- DIRECTORS
@@ -63,6 +63,16 @@ namespace MovieBusinessLayer
         {
             return films.GetDistinctActor(actorID);
         }
+        //------years
+        public List<mcl.Year> GetDistinctYearFromFilms(mcl.Films films)
+        {
+            return (films == null) ? null : films.ToListDistinctYear();
+        }
+
+        //public List<mcl.Year> GetDistinctYear(mcl.Year films, string yearID)
+        //{
+        //    return films.FilmID();
+        //}
 
     }
 }

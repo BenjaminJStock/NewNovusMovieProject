@@ -24,8 +24,9 @@ namespace WebMovies
                     string filmID = (DropDownListFilms.SelectedValue == av.SystemValues.DropDownLists.DefaultValue ? null : DropDownListFilms.SelectedValue);
                     string directorID = (DropDownListDirectors.SelectedValue == av.SystemValues.DropDownLists.DefaultValue ? null : DropDownListDirectors.SelectedValue);
                     string actorID = (DropDownListActors.SelectedValue == av.SystemValues.DropDownLists.DefaultValue ? null : DropDownListActors.SelectedValue);
+                    string yearID = (DropDownListYears.SelectedValue == av.SystemValues.DropDownLists.DefaultValue ? null : DropDownListYears.SelectedValue);
 
-                    populateDropDownsWithFilteredData(filmID, directorID, actorID);
+                    populateDropDownsWithFilteredData(filmID, directorID, actorID, yearID);
                 }
             }
             else
@@ -41,7 +42,9 @@ namespace WebMovies
 
         private void populateDropDowns(bool addBlankItem, List<mcl.SimplisticFilm> sFilms
                                                         , List<mcl.Director> directors
-                                                        , List<mcl.Actor> actors)
+                                                        , List<mcl.Actor> actors
+                                                        
+                                                        )
         {
             populateDropDownList(true, ddl.Films.ControlID
                                                         , sFilms
@@ -55,6 +58,10 @@ namespace WebMovies
                                                         , actors
                                                         , ddl.Actors.DataTextField
                                                         , ddl.Actors.DataValueField);
+            //populateDropDownList(true, ddl.Years.ControlID
+            //                                            , years
+            //                                            , ddl.Years.DataTextField
+            //                                            , ddl.Years.DataValueField);
         }
 
         private mcl.Films getFilms()
@@ -86,21 +93,22 @@ namespace WebMovies
                 List<mcl.Director> directors = bl1.GetDistinctDirectorsFromFilms(films);
                 List<mcl.Actor> actors = bl1.GetDistinctActorsFromFilms(films);
                 List<mcl.SimplisticFilm> sFilms = bl1.GetDistinctSimplisticFilmsFromFilms(films);
-
+                List<mcl.Year> years = bl1.GetDistinctYearFromFilms(films);
                 populateDropDowns(ddl.UseBlankItem, sFilms, directors, actors);
             }
         }
 
-        private void populateDropDownsWithFilteredData(string filmID, string directorID, string actorID)
+        private void populateDropDownsWithFilteredData(string filmID, string directorID, string actorID, string yearID)
         {
             mcl.Films films = getFilms();
             using (mbl bl1 = new mbl())
             {
-                mcl.Films tmp = bl1.GetFilmsSubset(filmID, directorID, actorID, films);
+                mcl.Films tmp = bl1.GetFilmsSubset(filmID, directorID, actorID, yearID, films);
 
                 List<mcl.Actor> actors = (actorID == null) ? bl1.GetDistinctActorsFromFilms(tmp) : bl1.GetDistinctActor(tmp, actorID);
                 List<mcl.Director> directors = (directorID == null) ? bl1.GetDistinctDirectorsFromFilms(tmp) : bl1.GetDistinctDirector(tmp, directorID);
                 List<mcl.SimplisticFilm> sFilms = (filmID == null) ? bl1.GetDistinctSimplisticFilmsFromFilms(tmp) : tmp.GetDistinctSimplisticFilm(filmID);
+                //List<mcl.Year> years = (yearID == null) ? bl1.GetDistinctYearFromFilms(tmp) : tmp.GetDistinctYear(yearID);
 
                 populateDropDowns(ddl.UseBlankItem, sFilms, directors, actors);
             }
