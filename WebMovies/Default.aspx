@@ -11,10 +11,8 @@
     <form id="form1" runat="server">
     <div>
         <div><label for="DropDownListFilms" id="lblFilmsDdl" runat="server"></label><asp:DropDownList ID="DropDownListFilms" runat="server" AutoPostBack="True"></asp:DropDownList></div>
-        <div><label for="DropDownListDirectors" id="lblDirectorsDdl" runat="server"></label><asp:DropDownList ID="DropDownListDirectors" runat="server" AutoPostBack="True" Height="16px"></asp:DropDownList></div>
+        <div><label for="DropDownListDirectors" id="lblDirectorsDdl" runat="server"></label><asp:DropDownList ID="DropDownListDirectors" runat="server" AutoPostBack="True"></asp:DropDownList></div>
         <div><label for="DropDownListActors" id="lblActorsDdl" runat="server"></label><asp:DropDownList ID="DropDownListActors" runat="server" AutoPostBack="True"></asp:DropDownList></div>
-        <div><label for="DropDownListYear" id="lblYearsDdl" runat="server"></label><asp:DropDownList ID="DropDownListYears" runat="server" AutoPostBack="True"></asp:DropDownList></div>
-        
         <asp:Button ID="btnUpdate" runat="server" Text="update" Visible="False" />
     </div>
     <div>

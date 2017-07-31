@@ -66,8 +66,6 @@ namespace MovieClassLayer
                                                                                                             .ToList();            
             }
 
-            
-
             //----------------------------------------------------------- ACTORS
             public List<Actor> ToListDistinctActor()
             {
@@ -94,7 +92,6 @@ namespace MovieClassLayer
             public string FilmYear { get; set; }
             public List<Director> Directors { get; set; }
             public List<Actor> Actors { get; set; }
-            public List<FilmYear> Years { get; set; }
 
             public Film()
             {
@@ -125,11 +122,6 @@ namespace MovieClassLayer
             {
                 return (SimplisticFilm)this;
             }
-
-            public static implicit operator Film(FilmYear v)
-            {
-                throw new NotImplementedException();
-            }
         }
 
         // ------------------------------------------------------------------------------------------------------------------- SIMPLISTIC FILM
@@ -153,22 +145,6 @@ namespace MovieClassLayer
                 //-- valid if has ID and Name
                 return (!(string.IsNullOrEmpty(this.FilmID)) && !(string.IsNullOrEmpty(this.FilmName)));
             }
-        }
-
-
-        //CREATED CLASS FOR FILM YEAR
-        public class FilmYear
-        {
-            public string FilmID { get; set; }
-            public string YearOfFilm { get; set; }
-
-            public FilmYear() { }
-            public FilmYear(string filmID, string yearofFilm)
-            {
-                this.FilmID = filmID;
-                this.YearOfFilm = yearofFilm;
-            }
-
         }
 
         // ------------------------------------------------------------------------------------------------------------------- DIRECTOR

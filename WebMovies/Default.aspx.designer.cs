@@ -76,24 +76,6 @@ namespace WebMovies {
         protected global::System.Web.UI.WebControls.DropDownList DropDownListActors;
         
         /// <summary>
-        /// lblYearsDdl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblYearsDdl;
-        
-        /// <summary>
-        /// DropDownListYears control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListYears;
-        
-        /// <summary>
         /// btnUpdate control.
         /// </summary>
         /// <remarks>

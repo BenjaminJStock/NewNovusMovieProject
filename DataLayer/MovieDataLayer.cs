@@ -4,14 +4,11 @@ using System.IO;
 using System.Linq;
 using csvMovies = ApplicationVariables.ApplicationVariables.DataIDs.CsvItems_Movies;
 using mcl = MovieClassLayer.MovieClasses;
-using MovieClassLayer;
 
 namespace MovieDataLayer
 {
     public class MovieDataLayer : IDisposable
     {
-       
-
         public void Dispose()
         {
             Dispose(true);
@@ -75,27 +72,12 @@ namespace MovieDataLayer
             return films;
         }
 
-        
         private mcl.Director getDirectorFromCSV(CsvReader csv)
         {
             mcl.Director director = new mcl.Director(csv[csvMovies.DirectorID]
                                                     , csv[csvMovies.DirectorName]);
             return director;
         }
-        private mcl.FilmYear getYearFromCSV(CsvReader csv)
-       {
-            mcl.FilmYear year = new mcl.FilmYear(csv[csvMovies.FilmID]
-                                                ,csv[csvMovies.FilmYear]);
-
-            return year;
-        }
-
-        //private mcl.FilmYear getYearFromCSV(CsvReader csv)
-        //{
-        //    mcl.Film FilmYear12 = new mcl.FilmYear(csv[csvMovies.FilmID]
-        //                                         ,csv[csvMovies.FilmYear]);
-        //    return FilmYear12;
-        //}
 
         private mcl.Actor getActorFromCSV(CsvReader csv)
         {
@@ -108,15 +90,12 @@ namespace MovieDataLayer
         {
             mcl.Director director = getDirectorFromCSV(csv);
             mcl.Actor actor = getActorFromCSV(csv);
-            mcl.FilmYear Year = getYearFromCSV(csv);
             mcl.Film film = new mcl.Film(csv[csvMovies.FilmID]
                                         , csv[csvMovies.FilmName]
                                         , csv[csvMovies.ImdbRating]
                                         , csv[csvMovies.FilmYear]);
             film.Directors.Add(director);
             film.Actors.Add(actor);
-            //film.Years.Add(film);
-            
             return film;
         }
     }

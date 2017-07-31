@@ -1,0 +1,14 @@
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ApplicationVariables\bin\Debug\ApplicationVariables.dll
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ApplicationVariables\bin\Debug\ApplicationVariables.pdb
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ApplicationVariables\obj\Debug\ApplicationVariables.dll
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ApplicationVariables\obj\Debug\ApplicationVariables.pdb
+C:\Users\Recor\Documents\Visual Studio 2015\Projects\NovusMovieProject\ApplicationVariables\bin\Debug\ApplicationVariables.dll
+C:\Users\Recor\Documents\Visual Studio 2015\Projects\NovusMovieProject\ApplicationVariables\bin\Debug\ApplicationVariables.pdb
+C:\Users\Recor\Documents\Visual Studio 2015\Projects\NovusMovieProject\ApplicationVariables\obj\Debug\ApplicationVariables.dll
+C:\Users\Recor\Documents\Visual Studio 2015\Projects\NovusMovieProject\ApplicationVariables\obj\Debug\ApplicationVariables.pdb
+C:\Users\Recor\Documents\Visual Studio 2015\Projects\NovusMovieProject\ApplicationVariables\obj\Debug\ApplicationVariables.csprojResolveAssemblyReference.cache
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ApplicationVariables\bin\Debug\ApplicationVariables.dll
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ApplicationVariables\bin\Debug\ApplicationVariables.pdb
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ApplicationVariables\obj\Debug\ApplicationVariables.csprojResolveAssemblyReference.cache
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ApplicationVariables\obj\Debug\ApplicationVariables.dll
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ApplicationVariables\obj\Debug\ApplicationVariables.pdb

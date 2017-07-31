@@ -1,0 +1,4 @@
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ClassLayer\bin\Debug\ClassLibrary1.dll
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ClassLayer\bin\Debug\ClassLibrary1.pdb
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ClassLayer\obj\Debug\ClassLibrary1.dll
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ClassLayer\obj\Debug\ClassLibrary1.pdb

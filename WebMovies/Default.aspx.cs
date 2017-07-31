@@ -96,12 +96,12 @@ namespace WebMovies
             mcl.Films films = getFilms();
             using (mbl bl1 = new mbl())
             {
-                mcl.Films tmp = bl1.GetFilmsSubset(filmID, directorID, actorID,films);
+                mcl.Films tmp = bl1.GetFilmsSubset(filmID, directorID, actorID, films);
 
                 List<mcl.Actor> actors = (actorID == null) ? bl1.GetDistinctActorsFromFilms(tmp) : bl1.GetDistinctActor(tmp, actorID);
                 List<mcl.Director> directors = (directorID == null) ? bl1.GetDistinctDirectorsFromFilms(tmp) : bl1.GetDistinctDirector(tmp, directorID);
                 List<mcl.SimplisticFilm> sFilms = (filmID == null) ? bl1.GetDistinctSimplisticFilmsFromFilms(tmp) : tmp.GetDistinctSimplisticFilm(filmID);
-                
+
                 populateDropDowns(ddl.UseBlankItem, sFilms, directors, actors);
             }
         }

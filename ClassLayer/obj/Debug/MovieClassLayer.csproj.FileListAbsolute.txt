@@ -1,0 +1,13 @@
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ClassLayer\bin\Debug\MovieClassLayer.dll
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ClassLayer\bin\Debug\MovieClassLayer.pdb
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.dll
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.pdb
+C:\Users\Recor\Documents\Visual Studio 2015\Projects\NovusMovieProject\ClassLayer\bin\Debug\MovieClassLayer.dll
+C:\Users\Recor\Documents\Visual Studio 2015\Projects\NovusMovieProject\ClassLayer\bin\Debug\MovieClassLayer.pdb
+C:\Users\Recor\Documents\Visual Studio 2015\Projects\NovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.dll
+C:\Users\Recor\Documents\Visual Studio 2015\Projects\NovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.pdb
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ClassLayer\bin\Debug\MovieClassLayer.dll
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ClassLayer\bin\Debug\MovieClassLayer.pdb
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.csprojResolveAssemblyReference.cache
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.dll
+C:\Users\p10331589\Documents\Visual Studio 2012\Projects\NovusMovieProject2\NovusMovieProject\ClassLayer\obj\Debug\MovieClassLayer.pdb
